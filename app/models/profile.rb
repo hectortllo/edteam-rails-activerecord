@@ -1,4 +1,6 @@
 class Profile < ApplicationRecord
+  has_one :computer
+
   after_initialize do |profile|
     puts "You have initialized an object"
   end
